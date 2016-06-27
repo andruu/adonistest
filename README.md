@@ -1,5 +1,7 @@
 # adonistest
 
+0) Run `npm i` in both foldtest and adonis-validation-provider
+
 1) In adonis-validation-provider run `npm link`
 
 2) In foldtest run `npm link adonis-validation-provider`

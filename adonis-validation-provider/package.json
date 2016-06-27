@@ -1,0 +1,46 @@
+{
+  "name": "adonis-validation-provider",
+  "version": "3.0.0",
+  "description": "Validator for adonis framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run lint && istanbul cover _mocha --report lcovonly -- -R spec test && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
+    "coverage": "istanbul cover ./node_modules/.bin/_mocha test",
+    "lint": "standard src/**/*.js providers/*.js test/*.js"
+  },
+  "author": "adonisjs",
+  "license": "MIT",
+  "dependencies": {
+    "indicative": "^2.1.1"
+  },
+  "peerDependencies": {
+    "adonis-fold": "^3.0.2"
+  },
+  "devDependencies": {
+    "adonis-fold": "^3.0.2",
+    "chai": "^3.2.0",
+    "co": "^4.6.0",
+    "co-mocha": "^1.1.2",
+    "coveralls": "^2.11.4",
+    "istanbul": "^0.3.20",
+    "mocha": "^2.3.2",
+    "mocha-lcov-reporter": "0.0.2",
+    "standard": "^5.4.1"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adonisjs/adonis-validation-provider.git"
+  },
+  "keywords": [
+    "validator",
+    "schema-validation",
+    "adonis"
+  ],
+  "bugs": {
+    "url": "https://github.com/adonisjs/adonis-validation-provider/issues"
+  },
+  "homepage": "https://github.com/adonisjs/adonis-validation-provider#readme"
+}
